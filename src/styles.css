@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "League Spartan", sans-serif;
+  }
+
+  
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+  }
+
+  .menu-container {
+    width: 300px; /* Adjust width */
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 95vw; /* Adjust width for smaller screens */
+    flex-direction: column; /* Stack elements */
+    align-items: center; /* Center elements */
+  }
+  .header-text h2 {
+    display: none;
+  }
+
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+
+  .form-container {
+    padding: 20px; /* Reduce padding */
+  }
+
+  input,
+  select {
+    font-size: 12px; /* Smaller font size */
+    padding: 8px; /* Smaller padding */
+  }
+  .footer-section{
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 40px; /* Smaller logo */
+    height: 40px;
+  }
+
+  input,
+  select {
+    font-size: 12px; /* Smaller font size */
+    padding: 8px; /* Smaller padding */
+  }
+
+  .menu-container {
+    width: 100%; /* Full width on small screens */
+    height: auto;
+    margin-bottom: 20px; /* Add spacing */
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  input,
+  select {
+    font-size: 16px; /* Prevents zooming on mobile devices */
+  }
+}
